@@ -1,0 +1,32 @@
+.picBtn img:hover {
+  cursor: pointer;
+}
+
+.slider-container {
+  width: 440px;
+  height: 380px;
+  display: flex;
+}
+
+.picBtnContainer {
+  position: relative;
+  margin: auto auto 0 auto;
+}
+
+.visiblePic {
+  display: flex;
+}
+
+.visiblePic img {
+  position: absolute;
+  transition-duration: 0.3s;
+  width: 440px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
