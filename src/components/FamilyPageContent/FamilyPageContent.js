@@ -351,6 +351,11 @@ class FamilyPageContent extends Component {
                 src={require("../../images/tape-pic-2.png")}
               ></img>
             </Col>
+            <Col right flexDir="column" alignItems="center">
+              <h2 style={{...txtStyleThree, width: '100%', textAlign: 'left', marginBottom: '15px'}}>Something here about something</h2>
+              <p style={{...txtStyleThree, fontSize: '14px', lineHeight: '15px', marginBottom: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue sapien. Nunc faucibus congue interdum. Sed eu enim tincidunt, posuere risus ac, rutrum arcu.</p>
+              <p style={{...txtStyleThree, fontSize: '14px', lineHeight: '15px', marginBottom: '10px'}}>Aliquam consectetur, odio id iaculis auctor, ante urna gravida mi, in rutrum nisi sapien in sem. Fusce vehicula interdum pharetra. Cras blandit viverra eros, quis pulvinar purus fringilla sit amet. Morbi tristique odio ut pretium vestibulum. Integer laoreet ornare congue.</p>
+            </Col>
           </Col>
           {/* ----------------------------------------------- */}
           {/*  ADVENTURE PACKAGES --------------------------- */}
