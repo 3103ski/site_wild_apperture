@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Bl7J"),r=a("vrFN"),o=a("TiAl");a("yMC2");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(r.a,{title:"Home"}),l.a.createElement(o.a,null),l.a.createElement("h1",null,"Gotta make this home page"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-c2bc18375144119e2803.js.map
