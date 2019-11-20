@@ -66,7 +66,7 @@ class FamPageTv extends Component {
 									fontFamily: "Playfair",
 									color: "white",
 									margin: "0 0 0 8px",
-									fontSize: "12px",
+									fontSize: "14px",
 								}}>
 								Adventure
 							</p>
@@ -80,7 +80,7 @@ class FamPageTv extends Component {
 									fontFamily: "Playfair",
 									color: "white",
 									margin: "0 0 0 8px",
-									fontSize: "12px",
+									fontSize: "14px",
 								}}>
 								Day In The Life
 							</p>
