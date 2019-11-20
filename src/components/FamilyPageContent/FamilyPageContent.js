@@ -4,6 +4,8 @@ import "./FamilyPageContent.css"
 import Navigation from "../Navigation/Navigation"
 import Col from "../HalfCol/HalfCol"
 
+
+
 // Section Components
 import FourPicDisplay from "../FourPicDisplay/FourPicDisplay"
 import SectionThreeTv from "../FamPageTv/FamPageTv"
@@ -160,7 +162,9 @@ class FamilyPageContent extends Component {
           <Col alignItems="center" width="25%">
             <img
               style={{
-                marginBottom: "-55%",
+                bottom: '2%',
+                position: 'absolute',
+                right: '-22%'
               }}
               src={require("../../images/fam-page-plant.png")}
             ></img>
@@ -313,10 +317,10 @@ class FamilyPageContent extends Component {
                 style={{
                   ...txtStyleThree,
                   fontSize: "14px",
-                  lineHeight: "15px",
+                  lineHeight: ".9rem",
                   textAlign: "right",
                   margin: "10px 0 5px auto",
-                  maxWidth: "480px",
+                  // maxWidth: "480px",
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -353,13 +357,80 @@ class FamilyPageContent extends Component {
             </Col>
             <Col right flexDir="column" alignItems="center">
               <h2 style={{...txtStyleThree, width: '100%', textAlign: 'left', marginBottom: '15px'}}>Something here about something</h2>
-              <p style={{...txtStyleThree, fontSize: '14px', lineHeight: '15px', marginBottom: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue sapien. Nunc faucibus congue interdum. Sed eu enim tincidunt, posuere risus ac, rutrum arcu.</p>
-              <p style={{...txtStyleThree, fontSize: '14px', lineHeight: '15px', marginBottom: '10px'}}>Aliquam consectetur, odio id iaculis auctor, ante urna gravida mi, in rutrum nisi sapien in sem. Fusce vehicula interdum pharetra. Cras blandit viverra eros, quis pulvinar purus fringilla sit amet. Morbi tristique odio ut pretium vestibulum. Integer laoreet ornare congue.</p>
+              <p style={{...txtStyleThree, fontSize: '.9rem', lineHeight: '15px', marginBottom: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue sapien. Nunc faucibus congue interdum. Sed eu enim tincidunt, posuere risus ac, rutrum arcu.</p>
+              <p style={{...txtStyleThree, fontSize: '.9rem', lineHeight: '15px', marginBottom: '10px'}}>Aliquam consectetur, odio id iaculis auctor, ante urna gravida mi, in rutrum nisi sapien in sem. Fusce vehicula interdum pharetra. Cras blandit viverra eros, quis pulvinar purus fringilla sit amet. Morbi tristique odio ut pretium vestibulum. Integer laoreet ornare congue.</p>
             </Col>
           </Col>
+          <Col alignItems="center" width="100%" top="47%" height='10%'>
+            <img className="mountain" src={require('../../images/img-mountain.png')}></img>
+          </Col>
           {/* ----------------------------------------------- */}
-          {/*  ADVENTURE PACKAGES --------------------------- */}
+          {/*  DAY IN THE LIFE PACKAGES --------------------- */}
           {/* ----------------------------------------------- */}
+          <Col height="16%" top="57%" width="100%">
+            <Col flexDir="column" right alignItems="center">
+              <div
+                style={{
+                  width: "340px",
+                  height: "65px",
+                  backgroundColor: "#fefdfb",
+                  border: "solid 5px #f1f0eb",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginLeft: "-100%",
+                  zIndex: "1",
+                }}
+              >
+                <h2 style={txtStyleThree}>Day In The Life Package</h2>
+              </div>
+              <p
+                style={{
+                  ...txtStyleThree,
+                  fontSize: "14px",
+                  lineHeight: ".9rem",
+                  textAlign: "left",
+                  margin: "10px 0 5px auto",
+                }}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <h4 style={{ ...txtStyleThree, margin: " 5px auto 0 0" }}>
+                2 hour adventure package includes
+              </h4>
+              <h4 style={{ ...txtStyleThree, margin: " 5px auto 10px 0" }}>
+                • one 16 x 24 • 25 images • 2 minute video
+              </h4>
+              <h4 style={{ ...txtStyleThree, margin: " 5px auto 0 0" }}>
+                $850 for just pictures
+              </h4>
+              <h4 style={{ ...txtStyleThree, margin: " 2px auto 10px 0" }}>
+                $1250 for pictures and video
+              </h4>
+            </Col>
+            <Col left alignItems="center">
+              <img
+                className="package-pic-right"
+                src={require("../../images/tape-pic-3.png")}
+              ></img>
+            </Col>
+          </Col>
+          <Col height="16%" top="73%" width="100%">
+            <Col right alignItems="center">
+              <img
+                className="package-pic-left"
+                src={require("../../images/tape-pic-4.png")}
+              ></img>
+            </Col>
+            <Col left flexDir="column" alignItems="center">
+              <h2 style={{...txtStyleThree, width: '100%', textAlign: 'right', marginBottom: '15px'}}>Something here about something</h2>
+              <p style={{...txtStyleThree, fontSize: '.9rem', textAlign: 'right', lineHeight: '15px', marginBottom: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue sapien. Nunc faucibus congue interdum. Sed eu enim tincidunt, posuere risus ac, rutrum arcu.</p>
+              <p style={{...txtStyleThree, fontSize: '.9rem', textAlign: 'right', lineHeight: '15px', marginBottom: '10px'}}>Aliquam consectetur, odio id iaculis auctor, ante urna gravida mi, in rutrum nisi sapien in sem. Fusce vehicula interdum pharetra. Cras blandit viverra eros, quis pulvinar purus fringilla sit amet. Morbi tristique odio ut pretium vestibulum. Integer laoreet ornare congue.</p>
+            </Col>
+          </Col>
         </div>
         {/* ******************************************* */}
         {/* ******************************************* */}

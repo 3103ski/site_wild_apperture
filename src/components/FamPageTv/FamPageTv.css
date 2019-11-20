@@ -1,0 +1,15 @@
+.player-skin-container {
+	position: relative;
+	width: 80%;
+}
+.player-skin-container .tv-frame {
+	width: 100%;
+	position: absolute;
+}
+.player-skin-container .video {
+	width: 85.5%;
+	margin-top: 0.6%;
+	left: 8.5%;
+	z-index: -1;
+	position: relative;
+}
