@@ -6,8 +6,8 @@ class TestVideo extends Component {
 	render() {
 		return (
 			<ReactPlayer
-				url={require("../../images/test-video.mp4")}
-				// url='https://assets.mixkit.co/videos/546/546-720.mp4'
+				// url={require("../../images/test-video.mp4")}
+				url='https://assets.mixkit.co/videos/546/546-720.mp4'
 				playing
 				loop
 				width='100%'
