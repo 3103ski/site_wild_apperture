@@ -1,15 +1,47 @@
 .player-skin-container {
 	position: relative;
 	width: 80%;
+	bottom: 5%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
 }
+
 .player-skin-container .tv-frame {
 	width: 100%;
-	position: absolute;
 }
 .player-skin-container .video {
-	width: 85.5%;
-	margin-top: 0.6%;
+	width: 85.8%;
+	margin-top: -35.8%;
 	left: 8.5%;
 	z-index: -1;
-	position: relative;
+	position: absolute;
+}
+
+.contain_tv-section p {
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.contain_tv-section h1 {
+	margin-top: -5%;
+}
+
+.contain_tv-section button {
+	width: 130px;
+	height: 25px;
+	background-color: rgb(212, 184, 150);
+	margin: 0 2px 10px 2px;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contain_tv-section button:target,
+.contain_tv-section button:focus {
+	outline: none;
 }

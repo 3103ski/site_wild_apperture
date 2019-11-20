@@ -4,17 +4,17 @@ import "./FamilyPageContent.css"
 import Navigation from "../Navigation/Navigation"
 import Col from "../HalfCol/HalfCol"
 
-
-
 // Section Components
 import FourPicDisplay from "../FourPicDisplay/FourPicDisplay"
-import SectionThreeTv from "../FamPageTv/FamPageTv"
 import FamPageTv from "../FamPageTv/FamPageTv"
 
 class FamilyPageContent extends Component {
+
   state = {
-    sectionTwoSlide: 1,
+    sectionTwoSlide: 1
   }
+
+
   render() {
     const textColorOne = "#aa7363"
     const textColorTwo = "#3c5764"
@@ -90,6 +90,8 @@ class FamilyPageContent extends Component {
         sectionTwoSlide: num,
       })
     }
+
+    
 
     return (
       <>
@@ -176,49 +178,6 @@ class FamilyPageContent extends Component {
             alignItems="center"
             padTop="20px"
           >
-            <h1 style={txtStyleThree}>Memories In Motion</h1>
-            <p style={txtStyleThree}>
-              There is absolutely nothing like having a sweet family video to
-              cherish forever. Something about family videos goes here and then
-              it explains why this family video is so awesome and why you should
-              spend a ton of money on adding a family video to your package.
-            </p>
-            <div>
-              <div style={{ display: "flex" }}>
-                <button>
-                  <img
-                    style={{ width: "15px" }}
-                    src={require("../../images/icon-play-box.png")}
-                  ></img>
-                  <p
-                    style={{
-                      fontFamily: "Playfair",
-                      color: "white",
-                      margin: "0 0 0 8px",
-                      fontSize: "12px",
-                    }}
-                  >
-                    Adventure
-                  </p>
-                </button>
-                <button>
-                  <img
-                    style={{ width: "15px" }}
-                    src={require("../../images/icon-play-box.png")}
-                  ></img>
-                  <p
-                    style={{
-                      fontFamily: "Playfair",
-                      color: "white",
-                      margin: "0 0 0 8px",
-                      fontSize: "12px",
-                    }}
-                  >
-                    Day In The Life
-                  </p>
-                </button>
-              </div>
-            </div>
             <FamPageTv></FamPageTv>
           </Col>
         </div>
