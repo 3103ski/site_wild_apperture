@@ -15,6 +15,7 @@ class TestVideo extends Component {
 					loop
 					width='100%'
 					height='unset'
+					playsinline
 				/>
 			</div>
 		)
