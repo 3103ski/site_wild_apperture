@@ -85,7 +85,7 @@ class FamilyPageContent extends Component {
           <Navigation></Navigation>
           <img
             style={{
-              width: "570px",
+              width: "50%",
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "50px",
