@@ -14,27 +14,13 @@ class FamilyPageContent extends Component {
   }
 
   render() {
-    const textColorOne = "#aa7363"
-    const textColorTwo = "#3c5764"
-    const textColorThree = "#837448"
-
-    const txtStyleOne = { color: textColorOne, fontFamily: "playfair" }
-    const txtStyleTwo = { color: textColorTwo, fontFamily: "playfair" }
-    const txtStyleThree = { color: textColorThree, fontFamily: "playfair" }
-
-    // Section two
-
     let SectionTwoText
     if (this.state.sectionTwoSlide === 1) {
       SectionTwoText = (
         <div className="slideTxt">
-          <h1 style={{ color: textColorOne, fontFamily: "playfair" }}>
-            Memories you can't forget.
-          </h1>
-          <h1 style={{ color: textColorOne, fontFamily: "playfair" }}>
-            Moments you'll love.
-          </h1>
-          <p style={{ color: textColorOne, fontFamily: "playfair" }}>
+          <h2 className="colorOne">Memories you can't forget.</h2>
+          <h2 className="colorOne">Moments you'll love.</h2>
+          <p className="colorOne">
             You take so many pictures of your family... but you're never in
             them! We know that's a common Mom problem. We're here to take that
             burden off your shoulders
@@ -44,13 +30,9 @@ class FamilyPageContent extends Component {
     } else if (this.state.sectionTwoSlide === 2) {
       SectionTwoText = (
         <div className="slideTxt">
-          <h1 style={{ color: textColorOne, fontFamily: "playfair" }}>
-            Neque porro quisquam est.
-          </h1>
-          <h1 style={{ color: textColorOne, fontFamily: "playfair" }}>
-            Mauris dignissim tincidunt.
-          </h1>
-          <p style={{ color: textColorOne, fontFamily: "playfair" }}>
+          <h2 className="colorOne">Neque porro quisquam est.</h2>
+          <h2 className="colorOne">Mauris dignissim tincidunt.</h2>
+          <p className="colorOne">
             Morbi at bibendum nulla. Quisque justo quam, varius in pellentesque
             ut, condimentum ac turpis. Integer luctus purus diam. Nunc suscipit
             volutpat urna sed molestie.
@@ -60,9 +42,9 @@ class FamilyPageContent extends Component {
     } else if (this.state.sectionTwoSlide === 3) {
       SectionTwoText = (
         <div className="slideTxt">
-          <h1 style={txtStyleOne}>Cras bibendum dapibus.</h1>
-          <h1 style={txtStyleOne}>Sed quis sem in.</h1>
-          <p style={txtStyleOne}>
+          <h2 className="colorOne">Cras bibendum dapibus.</h2>
+          <h2 className="colorOne">Sed quis sem in.</h2>
+          <p className="colorOne">
             Donec semper, sem et aliquam aliquet, velit erat interdum tellus,
             eget euismod tellus risus et libero. Donec dolor lorem, tristique id
             ex in, maximus auctor urna.
@@ -72,11 +54,11 @@ class FamilyPageContent extends Component {
     } else if (this.state.sectionTwoSlide === 4) {
       SectionTwoText = (
         <div className="slideTxt">
-          <h1 style={txtStyleOne}>Praesent sed massa.</h1>
-          <h1 style={txtStyleOne}>
+          <h2 className="colorOne">Praesent sed massa.</h2>
+          <h2 className="colorOne">
             fringilla, cursus augue at, fringilla dolor.
-          </h1>
-          <p style={txtStyleOne}>
+          </h2>
+          <p className="colorOne">
             Suspendisse egestas urna ac iaculis condimentum. Aliquam erat
             volutpat. Aenean volutpat vulputate augue vitae condimentum.
           </p>
@@ -94,6 +76,7 @@ class FamilyPageContent extends Component {
         {/* ******************************************* */}
         {/* HEADER__NAV__TITLE */}
         {/* ******************************************* */}
+
         <div className="contain_header-section fam_bg">
           <img src={require("../../images/fam_bg-1.png")}></img>
           <div className="image_header-bg">
@@ -123,38 +106,41 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/* SECTION__2__PICTURE SLIDE */}
+        {/*         SECTION__2__PICTURE SLIDE           */}
         {/* ******************************************* */}
+
         <div className="contain_section-2 fam_bg">
           <img src={require("../../images/fam_bg-4.png")}></img>
-          <Col left alignItems="center">
+          <Col padLeft="7%" left alignItems="center">
             <FourPicDisplay changeTxt={changeSlideNum}></FourPicDisplay>
           </Col>
-          <Col alignItems="center" right flexDir="column">
+          <Col padRight="7%" alignItems="center" right flexDir="column">
             {SectionTwoText}
           </Col>
         </div>
 
         {/* ******************************************* */}
-        {/* SECTION__3__quadPics */}
+        {/*           SECTION__3__quadPics              */}
         {/* ******************************************* */}
+
         <div className="contain_section-3 fam_bg">
           <img src={require("../../images/fam_bg-5.png")}></img>
-          <Col left width="40%" flexDir="column">
-            <h1 style={txtStyleTwo}>They grow so fast</h1>
-            <p style={txtStyleTwo}>
+          <Col padLeft="7%" left width="40%" flexDir="column">
+            <h1 className="colorTwo lightWeight">They're growing so fast</h1>
+            <p className="colorTwo">
               Our children are only this age once. We want to see them grow and
               how they've grown over the years. Do this because you need to.
             </p>
           </Col>
-          <Col alignItems="center" right width="60%">
+          <Col alignItems="center" padRight="7%" right width="60%">
             <img src={require("../../images/quad-pics.png")}></img>
           </Col>
         </div>
 
         {/* ******************************************* */}
-        {/* SECTION__4__Tv */}
+        {/*             SECTION__4__Tv                  */}
         {/* ******************************************* */}
+
         <div className="contain_tv-section fam_bg">
           <img src={require("../../images/fam_bg-6.png")}></img>
           <Col alignItems="center" width="25%">
@@ -179,80 +165,58 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/* Section__5__FAMILY PRINTS */}
+        {/*          Section__5__FAMILY PRINTS          */}
         {/* ******************************************* */}
 
         <div className="contain_print-section fam_bg">
           <img src={require("../../images/fam_bg-7.png")}></img>
-          <Col left alignItems="center">
+          <Col padLeft="7%" left alignItems="center">
             <img
               src={require("../../images/three-framed.png")}
               alt="prints"
             ></img>
           </Col>
-          <Col flexDir="column" right>
-            <h1 style={{ ...txtStyleOne, padding: "0 15px" }}>
-              Put Them On The Wall
-            </h1>
-            <p
-              style={{
-                ...txtStyleOne,
-                fontSize: "14px",
-                lineHeight: "17px",
-                padding: "5px 15px",
-                margin: "0",
-              }}
-            >
+          <Col flexDir="column" right padRight="7%">
+            <h1 className="lightWeight colorOne">Put Them On The Wall</h1>
+            <p className="colorOne">
               This is where we talk about how awesome our pictures are and the
               fact that they need to be on a wall. Not only because they look
               nice but because they’ll be seen everyday to be cherished forever.
             </p>
-            <h1 style={{ ...txtStyleOne, padding: "0 15px" }}>
-              We Offer Prints
-            </h1>
-            <p
-              style={{
-                ...txtStyleOne,
-                fontSize: "14px",
-                lineHeight: "17px",
-                padding: "5px 15px",
-                margin: "0",
-              }}
-            >
+            <h1 className="lightWeight colorOne">We Offer Prints</h1>
+            <p className="colorOne">
               This is where we tell them the fact that we offer prints of all
               sizes and maybe click here to download our print price guide. At
               this point they can’t believe this is so awesome and are ready to
               book.
             </p>
-            <button
-              style={{
-                width: "170px",
-                height: "35px",
-                backgroundColor: "#937656",
-                margin: "10px 15px",
-                fontSize: "14px",
-                color: "white",
-              }}
-            >
-              Download Print Sheet
-            </button>
+            <button>Download Print Sheet</button>
           </Col>
         </div>
+
         {/* ******************************************* */}
-        {/* SECTION__6__PACKAGES */}
+        {/*          SECTION__6__PACKAGES               */}
         {/* ******************************************* */}
 
         <div className="contain_packages-section fam_bg">
           <img src={require("../../images/fam_bg-8.png")}></img>
 
-          {/* ----------------------------------------------- */}
-          {/*  ADVENTURE PACKAGES --------------------------- */}
-          {/* ----------------------------------------------- */}
+          {/* "Lets Talk Banner" */}
           <Col width="100%" height="15%" alignItems="center">
-            <h1 style={{ ...txtStyleOne }}>Let's Talk About Our Packages</h1>
+            <h1
+              style={{ letterSpacing: "1px", marginTop: "4%" }}
+              className="lightWeight colorThree"
+            >
+              Let's Talk About Our Packages
+            </h1>
           </Col>
-          <Col height="16%" top="15%" width="100%">
-            <Col flexDir="column" left alignItems="center">
+
+          {/* ----------------------------------------------- */}
+          {/*             ADVENTURE PACKAGES                  */}
+          {/* ----------------------------------------------- */}
+
+          <Col height="18%" top="15%" width="100%">
+            <Col flexDir="column" left padLeft="8%" alignItems="center">
               <div
                 style={{
                   width: "280px",
@@ -264,83 +228,56 @@ class FamilyPageContent extends Component {
                   justifyContent: "center",
                   marginRight: "-100%",
                   zIndex: "1",
+                  marginTop: "12%",
                 }}
               >
-                <h2 style={txtStyleThree}>Adventure Package</h2>
+                <h2 className=" lightWeight colorThree">Adventure Package</h2>
               </div>
               <p
-                style={{
-                  ...txtStyleThree,
-                  fontSize: "14px",
-                  lineHeight: ".9rem",
-                  textAlign: "right",
-                  margin: "10px 0 5px auto",
-                  // maxWidth: "480px",
-                }}
+                className="colorThree"
+                style={{ textAlign: "right", marginTop: "15px" }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
                 maecenas accumsan lacus vel facilisis.
               </p>
-              <h4 style={{ ...txtStyleThree, margin: " 5px 0 0 auto" }}>
-                2 hour adventure package includes
-              </h4>
-              <h4 style={{ ...txtStyleThree, margin: " 5px 0 10px auto" }}>
-                • one 16 x 24 • 25 images • 2 minute video
-              </h4>
-              <h4 style={{ ...txtStyleThree, margin: " 5px 0 0 auto" }}>
-                $850 for just pictures
-              </h4>
-              <h4 style={{ ...txtStyleThree, margin: " 2px 0 10px auto" }}>
-                $1250 for pictures and video
-              </h4>
+              <div className="pkgs_inclusions" style={{ textAlign: "right" }}>
+                <h4 className="colorThree">
+                  2 hour adventure package includes
+                </h4>
+                <h4 className="colorThree" style={{ marginBottom: "10px" }}>
+                  • one 16 x 24 • 25 images • 2 minute video
+                </h4>
+                <h4 className="colorThree">$850 for just pictures</h4>
+                <h4 className="colorThree">$1250 for pictures and video</h4>
+              </div>
             </Col>
-            <Col right alignItems="center">
+            <Col right padRight="5%" alignItems="center">
               <img
                 className="package-pic-right"
                 src={require("../../images/tape-pic-1.png")}
               ></img>
             </Col>
           </Col>
-          <Col height="16%" top="31%" width="100%">
-            <Col left alignItems="center">
+
+          <Col height="18%" top="33%" width="100%">
+            <Col left padLeft="5%" alignItems="center">
               <img
                 className="package-pic-left"
                 src={require("../../images/tape-pic-2.png")}
               ></img>
             </Col>
-            <Col right flexDir="column" alignItems="center">
-              <h2
-                style={{
-                  ...txtStyleThree,
-                  width: "100%",
-                  textAlign: "left",
-                  marginBottom: "15px",
-                }}
-              >
+            <Col right padRight="8%" flexDir="column" alignItems="center">
+              <h3 className="colorThree lightWeight">
                 Something here about something
-              </h2>
-              <p
-                style={{
-                  ...txtStyleThree,
-                  fontSize: ".9rem",
-                  lineHeight: "15px",
-                  marginBottom: "10px",
-                }}
-              >
+              </h3>
+              <p className="colorThree" style={{ marginTop: "15px" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
                 augue sapien. Nunc faucibus congue interdum. Sed eu enim
                 tincidunt, posuere risus ac, rutrum arcu.
               </p>
-              <p
-                style={{
-                  ...txtStyleThree,
-                  fontSize: ".9rem",
-                  lineHeight: "15px",
-                  marginBottom: "10px",
-                }}
-              >
+              <p className="colorThree">
                 Aliquam consectetur, odio id iaculis auctor, ante urna gravida
                 mi, in rutrum nisi sapien in sem. Fusce vehicula interdum
                 pharetra. Cras blandit viverra eros, quis pulvinar purus
@@ -349,17 +286,21 @@ class FamilyPageContent extends Component {
               </p>
             </Col>
           </Col>
-          <Col alignItems="center" width="100%" top="47%" height="10%">
+
+          {/* MOUNTAIN GRAPHIC */}
+          <Col alignItems="center" width="100%" top="51%" height="10%">
             <img
               className="mountain"
               src={require("../../images/img-mountain.png")}
             ></img>
           </Col>
+
           {/* ----------------------------------------------- */}
-          {/*  DAY IN THE LIFE PACKAGES --------------------- */}
+          {/*           DAY IN THE LIFE PACKAGES              */}
           {/* ----------------------------------------------- */}
-          <Col height="16%" top="57%" width="100%">
-            <Col flexDir="column" right alignItems="center">
+
+          <Col height="18%" top="61%" width="100%">
+            <Col flexDir="column" right padRight="8%" alignItems="center">
               <div
                 style={{
                   width: "340px",
@@ -371,84 +312,60 @@ class FamilyPageContent extends Component {
                   justifyContent: "center",
                   marginLeft: "-100%",
                   zIndex: "1",
+                  marginTop: "12%",
                 }}
               >
-                <h2 style={txtStyleThree}>Day In The Life Package</h2>
+                <h2 className="colorThree lightWeight">
+                  Day In The Life Package
+                </h2>
               </div>
-              <p
-                style={{
-                  ...txtStyleThree,
-                  fontSize: "14px",
-                  lineHeight: ".9rem",
-                  textAlign: "left",
-                  margin: "10px 0 5px auto",
-                }}
-              >
+              <p style={{ marginTop: "15px" }} className="colorThree">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
                 maecenas accumsan lacus vel facilisis.
               </p>
-              <h4 style={{ ...txtStyleThree, margin: " 5px auto 0 0" }}>
-                2 hour adventure package includes
-              </h4>
-              <h4 style={{ ...txtStyleThree, margin: " 5px auto 10px 0" }}>
-                • one 16 x 24 • 25 images • 2 minute video
-              </h4>
-              <h4 style={{ ...txtStyleThree, margin: " 5px auto 0 0" }}>
-                $850 for just pictures
-              </h4>
-              <h4 style={{ ...txtStyleThree, margin: " 2px auto 10px 0" }}>
-                $1250 for pictures and video
-              </h4>
+              <div className="pkgs_inclusions" style={{ textAlign: "left" }}>
+                <h4 className="colorThree">
+                  2 hour adventure package includes
+                </h4>
+                <h4 className="colorThree">
+                  • one 16 x 24 • 25 images • 2 minute video
+                </h4>
+                <h4 style={{ marginTop: "10px" }} className="colorThree">
+                  $850 for just pictures
+                </h4>
+                <h4 className="colorThree">$1250 for pictures and video</h4>
+              </div>
             </Col>
-            <Col left alignItems="center">
+            <Col left padLeft="5%" alignItems="center">
               <img
                 className="package-pic-right"
                 src={require("../../images/tape-pic-3.png")}
               ></img>
             </Col>
           </Col>
-          <Col height="16%" top="73%" width="100%">
-            <Col right alignItems="center">
+
+          <Col height="16%" top="79%" width="100%">
+            <Col right padRight="5%" alignItems="center">
               <img
                 className="package-pic-left"
                 src={require("../../images/tape-pic-4.png")}
               ></img>
             </Col>
-            <Col left flexDir="column" alignItems="center">
-              <h2
-                style={{
-                  ...txtStyleThree,
-                  width: "100%",
-                  textAlign: "right",
-                  marginBottom: "15px",
-                }}
-              >
+            <Col left padLeft="8%" flexDir="column" alignItems="center">
+              <h3 style={{ textAlign: "right" }} className="colorThree">
                 Something here about something
-              </h2>
+              </h3>
               <p
-                style={{
-                  ...txtStyleThree,
-                  fontSize: ".9rem",
-                  textAlign: "right",
-                  lineHeight: "15px",
-                  marginBottom: "10px",
-                }}
+                className="colorThree"
+                style={{ marginTop: "15px", textAlign: "right" }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
                 augue sapien. Nunc faucibus congue interdum. Sed eu enim
                 tincidunt, posuere risus ac, rutrum arcu.
               </p>
-              <p
-                style={{
-                  ...txtStyleThree,
-                  fontSize: ".9rem",
-                  textAlign: "right",
-                  lineHeight: "15px",
-                  marginBottom: "10px",
-                }}
-              >
+              <p className="colorThree" style={{ textAlign: "right" }}>
                 Aliquam consectetur, odio id iaculis auctor, ante urna gravida
                 mi, in rutrum nisi sapien in sem. Fusce vehicula interdum
                 pharetra. Cras blandit viverra eros, quis pulvinar purus
@@ -458,41 +375,24 @@ class FamilyPageContent extends Component {
             </Col>
           </Col>
         </div>
+
         {/* ******************************************* */}
-        {/* SECTION__7__CONTACT FORM */}
+        {/*          SECTION__7__CONTACT FORM           */}
         {/* ******************************************* */}
+
         <div className="contain_form-section fam_bg">
           <img src={require("../../images/fam_bg-9.png")}></img>
           {/* LEFT PICTURES */}
-          <Col width="25%" alignItems="center">
-            <img
-              style={{
-                position: "absolute",
-                width: "85%",
-                top: "5%",
-                left: "0",
-              }}
-              src={require("../../images/form-pic-1.png")}
-            ></img>
-            <img
-              style={{
-                position: "absolute",
-                width: "100%",
-                bottom: "5%",
-                left: "0",
-              }}
-              src={require("../../images/form-pic-3.png")}
-            ></img>
-          </Col>
+          <Col width="25%" alignItems="center"></Col>
           {/* FORM */}
           <Col
             display="flex"
             width="50%"
             marginLeft="25%"
             flexDir="column"
-            justCont="unset"
             alignItems="center"
             padTop="5%"
+            justCont="unset"
           >
             <h1>Ready to book?</h1>
             <form name="contact" method="POST" data-netlify="true">
@@ -513,26 +413,7 @@ class FamilyPageContent extends Component {
             </form>
           </Col>
           {/* RIGHT PICTURES */}
-          <Col width="25%" marginLeft="75%">
-            <img
-              style={{
-                position: "absolute",
-                width: "85%",
-                top: "0",
-                right: "0",
-              }}
-              src={require("../../images/form-pic-2.png")}
-            ></img>
-            <img
-              style={{
-                position: "absolute",
-                width: "100%",
-                bottom: "0",
-                right: "0",
-              }}
-              src={require("../../images/form-pic-4.png")}
-            ></img>
-          </Col>
+          <Col width="25%" marginLeft="75%"></Col>
         </div>
       </>
     )

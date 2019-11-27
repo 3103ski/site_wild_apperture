@@ -3,3 +3,35 @@
   top: 0;
   z-index: -1;
 }
+
+* {
+  font-family: "Playfair Display", serif !important;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+h1 {
+  font-size: 3.4vw;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 2.1vw;
+}
+
+.colorOne {
+  color: #aa7363;
+}
+
+.colorTwo {
+  color: #3c5764;
+}
+
+.colorThree {
+  color: #837448;
+}

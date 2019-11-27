@@ -1,12 +1,16 @@
 /* NOTES */
 /* All contents inside of each section container must be nested in a container that is positioned absolute to maintain seamless BG */
 
-* {
-  font-family: "Playfair Display", serif;
+/* ******************************** */
+/*    UTILITY & TAG STYLES	        */
+/* ******************************** */
+
+.lightWeight {
+  font-weight: 100;
 }
 
 /* ******************************** */
-/* Properly positions all bg images */
+/*    Position_BG_Imgs 				*/
 /* ******************************** */
 
 .fam_bg img {
@@ -19,7 +23,7 @@
 }
 
 /* ******************************** */
-/* Container for header section */
+/*    Header_Section			    */
 /* ******************************** */
 
 .contain_fam-header {
@@ -38,8 +42,9 @@
 }
 
 /* ******************************** */
-/* Page title text */
+/*    Page_Title_Text   			*/
 /* ******************************** */
+
 .box_header-titles {
   margin: 4% auto 0 auto;
   text-align: center;
@@ -64,7 +69,7 @@
 }
 
 /* ******************************** */
-/* SECTION 2 with slider */
+/*    SECTION__2__FourPictures      */
 /* ******************************** */
 
 @keyframes showTxt {
@@ -85,8 +90,25 @@
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.contain_section-2 p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.3rem;
+}
+
 /* ******************************** */
-/* SECTION__4__TV-section */
+/*    SECTION__3__TheyGrowSoFast    */
+/* ******************************** */
+
+.contain_section-3 p {
+  margin-top: 15px;
+  padding-right: 6%;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+/* ******************************** */
+/*    SECTION__4__TV-section        */
 /* ******************************** */
 
 .contain_tv-section p {
@@ -111,7 +133,29 @@
 }
 
 /* ******************************** */
-/* SECTION__6__PACKAGES */
+/*    SECTION__5__PRINTS 			*/
+/* ******************************** */
+
+.contain_print-section h1,
+.contain_print-section p {
+  padding-left: 15px;
+}
+
+.contain_print-section p {
+  margin-top: 10px;
+}
+
+.contain_print-section button {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(147, 118, 86);
+  margin: 0px 15px 10px 15px;
+  font-size: 16px;
+  color: white;
+}
+
+/* ******************************** */
+/*    SECTION__6__PACKAGES 			*/
 /* ******************************** */
 
 .contain_packages-section .package-pic-right {
@@ -128,8 +172,33 @@
   width: 30%;
 }
 
+.contain_packages-section p {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.pkgs_inclusions {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.contain_packages-section h2 {
+  font-size: 1.6rem;
+}
+
+.contain_packages-section h3 {
+  font-size: 1.7rem;
+  text-align: left;
+  width: 100%;
+}
+
+/* .pkgs_inclusions h4 {
+  text-align: right;
+} */
+
 /* ******************************** */
-/* SECTION__7__CONTACT FORM */
+/*    SECTION__7__CONTACT FORM      */
 /* ******************************** */
 
 .contain_form-section h1 {
