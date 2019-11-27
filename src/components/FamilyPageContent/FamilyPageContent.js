@@ -485,27 +485,31 @@ class FamilyPageContent extends Component {
             ></img>
           </Col>
           {/* FORM */}
-          <Col width="50%" marginLeft="25%">
+          <Col
+            display="flex"
+            width="50%"
+            marginLeft="25%"
+            flexDir="column"
+            justCont="unset"
+            alignItems="center"
+            padTop="5%"
+          >
+            <h1>Ready to book?</h1>
             <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
-              <p>
-                <label>
-                  Your Name: <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your Email: <input type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Message: <textarea name="message"></textarea>
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
+              <input placeholder="Name" type="text" name="name" />
+              <input placeholder="Email" type="email" name="email" />
+              <input
+                placeholder="Date And Location"
+                type="email"
+                name="email"
+              />
+              <textarea
+                placeholder="What's on your mind?"
+                name="message"
+                rows="6"
+              ></textarea>
+              <button type="submit">Send</button>
             </form>
           </Col>
           {/* RIGHT PICTURES */}

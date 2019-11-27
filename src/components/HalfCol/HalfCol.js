@@ -15,7 +15,7 @@ const Col = props => {
     paddingRight: props.right ? "7%" : null,
     paddingTop: props.padTop ? props.padTop : null,
     paddingBott: props.padBott ? props.padBott : null,
-    justifyContent: "center",
+    justifyContent: props.justCont ? props.justCont : "center",
     flexDirection: props.flexDir ? props.flexDir : null,
     alignItems: props.alignItems ? props.alignItems : null,
     marginLeft: props.marginLeft ? props.marginLeft : null,
