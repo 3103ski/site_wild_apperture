@@ -9,11 +9,9 @@ import FourPicDisplay from "../FourPicDisplay/FourPicDisplay"
 import FamPageTv from "../FamPageTv/FamPageTv"
 
 class FamilyPageContent extends Component {
-
   state = {
-    sectionTwoSlide: 1
+    sectionTwoSlide: 1,
   }
-
 
   render() {
     const textColorOne = "#aa7363"
@@ -91,8 +89,6 @@ class FamilyPageContent extends Component {
       })
     }
 
-    
-
     return (
       <>
         {/* ******************************************* */}
@@ -164,9 +160,9 @@ class FamilyPageContent extends Component {
           <Col alignItems="center" width="25%">
             <img
               style={{
-                bottom: '2%',
-                position: 'absolute',
-                right: '-22%'
+                bottom: "2%",
+                position: "absolute",
+                right: "-22%",
               }}
               src={require("../../images/fam-page-plant.png")}
             ></img>
@@ -315,13 +311,49 @@ class FamilyPageContent extends Component {
               ></img>
             </Col>
             <Col right flexDir="column" alignItems="center">
-              <h2 style={{...txtStyleThree, width: '100%', textAlign: 'left', marginBottom: '15px'}}>Something here about something</h2>
-              <p style={{...txtStyleThree, fontSize: '.9rem', lineHeight: '15px', marginBottom: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue sapien. Nunc faucibus congue interdum. Sed eu enim tincidunt, posuere risus ac, rutrum arcu.</p>
-              <p style={{...txtStyleThree, fontSize: '.9rem', lineHeight: '15px', marginBottom: '10px'}}>Aliquam consectetur, odio id iaculis auctor, ante urna gravida mi, in rutrum nisi sapien in sem. Fusce vehicula interdum pharetra. Cras blandit viverra eros, quis pulvinar purus fringilla sit amet. Morbi tristique odio ut pretium vestibulum. Integer laoreet ornare congue.</p>
+              <h2
+                style={{
+                  ...txtStyleThree,
+                  width: "100%",
+                  textAlign: "left",
+                  marginBottom: "15px",
+                }}
+              >
+                Something here about something
+              </h2>
+              <p
+                style={{
+                  ...txtStyleThree,
+                  fontSize: ".9rem",
+                  lineHeight: "15px",
+                  marginBottom: "10px",
+                }}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+                augue sapien. Nunc faucibus congue interdum. Sed eu enim
+                tincidunt, posuere risus ac, rutrum arcu.
+              </p>
+              <p
+                style={{
+                  ...txtStyleThree,
+                  fontSize: ".9rem",
+                  lineHeight: "15px",
+                  marginBottom: "10px",
+                }}
+              >
+                Aliquam consectetur, odio id iaculis auctor, ante urna gravida
+                mi, in rutrum nisi sapien in sem. Fusce vehicula interdum
+                pharetra. Cras blandit viverra eros, quis pulvinar purus
+                fringilla sit amet. Morbi tristique odio ut pretium vestibulum.
+                Integer laoreet ornare congue.
+              </p>
             </Col>
           </Col>
-          <Col alignItems="center" width="100%" top="47%" height='10%'>
-            <img className="mountain" src={require('../../images/img-mountain.png')}></img>
+          <Col alignItems="center" width="100%" top="47%" height="10%">
+            <img
+              className="mountain"
+              src={require("../../images/img-mountain.png")}
+            ></img>
           </Col>
           {/* ----------------------------------------------- */}
           {/*  DAY IN THE LIFE PACKAGES --------------------- */}
@@ -385,16 +417,96 @@ class FamilyPageContent extends Component {
               ></img>
             </Col>
             <Col left flexDir="column" alignItems="center">
-              <h2 style={{...txtStyleThree, width: '100%', textAlign: 'right', marginBottom: '15px'}}>Something here about something</h2>
-              <p style={{...txtStyleThree, fontSize: '.9rem', textAlign: 'right', lineHeight: '15px', marginBottom: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue sapien. Nunc faucibus congue interdum. Sed eu enim tincidunt, posuere risus ac, rutrum arcu.</p>
-              <p style={{...txtStyleThree, fontSize: '.9rem', textAlign: 'right', lineHeight: '15px', marginBottom: '10px'}}>Aliquam consectetur, odio id iaculis auctor, ante urna gravida mi, in rutrum nisi sapien in sem. Fusce vehicula interdum pharetra. Cras blandit viverra eros, quis pulvinar purus fringilla sit amet. Morbi tristique odio ut pretium vestibulum. Integer laoreet ornare congue.</p>
+              <h2
+                style={{
+                  ...txtStyleThree,
+                  width: "100%",
+                  textAlign: "right",
+                  marginBottom: "15px",
+                }}
+              >
+                Something here about something
+              </h2>
+              <p
+                style={{
+                  ...txtStyleThree,
+                  fontSize: ".9rem",
+                  textAlign: "right",
+                  lineHeight: "15px",
+                  marginBottom: "10px",
+                }}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+                augue sapien. Nunc faucibus congue interdum. Sed eu enim
+                tincidunt, posuere risus ac, rutrum arcu.
+              </p>
+              <p
+                style={{
+                  ...txtStyleThree,
+                  fontSize: ".9rem",
+                  textAlign: "right",
+                  lineHeight: "15px",
+                  marginBottom: "10px",
+                }}
+              >
+                Aliquam consectetur, odio id iaculis auctor, ante urna gravida
+                mi, in rutrum nisi sapien in sem. Fusce vehicula interdum
+                pharetra. Cras blandit viverra eros, quis pulvinar purus
+                fringilla sit amet. Morbi tristique odio ut pretium vestibulum.
+                Integer laoreet ornare congue.
+              </p>
             </Col>
           </Col>
         </div>
         {/* ******************************************* */}
+        {/* SECTION__7__CONTACT FORM */}
         {/* ******************************************* */}
         <div className="contain_form-section fam_bg">
           <img src={require("../../images/fam_bg-9.png")}></img>
+          {/* LEFT PICTURES */}
+          <Col width="25%" alignItems="center">
+            <img
+              style={{
+                position: "absolute",
+                width: "85%",
+                top: "5%",
+                left: "0",
+              }}
+              src={require("../../images/form-pic-1.png")}
+            ></img>
+            <img
+              style={{
+                position: "absolute",
+                width: "100%",
+                bottom: "5%",
+                left: "0",
+              }}
+              src={require("../../images/form-pic-3.png")}
+            ></img>
+          </Col>
+          {/* FORM */}
+          <Col width="50%" marginLeft="25%"></Col>
+          {/* RIGHT PICTURES */}
+          <Col width="25%" marginLeft="75%">
+            <img
+              style={{
+                position: "absolute",
+                width: "85%",
+                top: "0",
+                right: "0",
+              }}
+              src={require("../../images/form-pic-2.png")}
+            ></img>
+            <img
+              style={{
+                position: "absolute",
+                width: "100%",
+                bottom: "0",
+                right: "0",
+              }}
+              src={require("../../images/form-pic-4.png")}
+            ></img>
+          </Col>
         </div>
       </>
     )
