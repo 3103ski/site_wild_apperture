@@ -74,12 +74,13 @@ class FamilyPageContent extends Component {
     return (
       <>
         {/* ******************************************* */}
-        {/* HEADER__NAV__TITLE */}
+        {/*                    Header                   */}
+        {/*            Title, Banner Pic, Nav           */}
         {/* ******************************************* */}
 
-        <div className="contain_header-section fam_bg">
+        <div className="contain_header-section section_BG">
           <img src={require("../../images/fam_bg-1.png")}></img>
-          <div className="image_header-bg">
+          <div className="image_fam-header-bg header-bg">
             <img src={require("../../images/fam_bg-2.png")}></img>
           </div>
           <Navigation></Navigation>
@@ -97,7 +98,7 @@ class FamilyPageContent extends Component {
           ></img>
           <img src={require("../../images/fam_bg-3.png")}></img>
 
-          <div className="contain_fam-header">
+          <div className="contain_title-header">
             <div className="box_header-titles">
               <h1>WILD APERTURE</h1>
               <h4>FAMILY & COUPLES PHOTOGRAPHY AND VIDEOGRAPHY</h4>
@@ -106,10 +107,11 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/*         SECTION__2__PICTURE SLIDE           */}
+        {/*                 Section__1                  */}
+        {/*            Four Picture samples             */}
         {/* ******************************************* */}
 
-        <div className="contain_section-2 fam_bg">
+        <div className="contain_fam-section-1 section_BG">
           <img src={require("../../images/fam_bg-4.png")}></img>
           <Col padLeft="7%" left alignItems="center">
             <FourPicDisplay changeTxt={changeSlideNum}></FourPicDisplay>
@@ -120,10 +122,11 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/*           SECTION__3__quadPics              */}
+        {/*                 Section__2                  */}
+        {/*            The Grow Fast Banner             */}
         {/* ******************************************* */}
 
-        <div className="contain_section-3 fam_bg">
+        <div className="contain_fam-section-2 section_BG">
           <img src={require("../../images/fam_bg-5.png")}></img>
           <Col padLeft="7%" left width="40%" flexDir="column">
             <h1 className="colorTwo lightWeight">They're growing so fast</h1>
@@ -138,10 +141,11 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/*             SECTION__4__Tv                  */}
+        {/*                 Section__3                  */}
+        {/*                 TV Section                  */}
         {/* ******************************************* */}
 
-        <div className="contain_tv-section fam_bg">
+        <div className="contain_fam-section-3 section_BG">
           <img src={require("../../images/fam_bg-6.png")}></img>
           <Col alignItems="center" width="25%">
             <img
@@ -165,10 +169,11 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/*          Section__5__FAMILY PRINTS          */}
+        {/*                 Section__4                  */}
+        {/*              FRAMED PICTURES                */}
         {/* ******************************************* */}
 
-        <div className="contain_print-section fam_bg">
+        <div className="contain_fam-section-4 section_BG">
           <img src={require("../../images/fam_bg-7.png")}></img>
           <Col padLeft="7%" left alignItems="center">
             <img
@@ -195,10 +200,11 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/*          SECTION__6__PACKAGES               */}
+        {/*                 Section__5                  */}
+        {/*              FAMILY PACKAGES                */}
         {/* ******************************************* */}
 
-        <div className="contain_packages-section fam_bg">
+        <div className="contain_fam-section-5 section_BG">
           <img src={require("../../images/fam_bg-8.png")}></img>
 
           {/* "Lets Talk Banner" */}
@@ -211,45 +217,46 @@ class FamilyPageContent extends Component {
             </h1>
           </Col>
 
-          {/* ----------------------------------------------- */}
-          {/*             ADVENTURE PACKAGES                  */}
-          {/* ----------------------------------------------- */}
+          {/* ----------------------------------- */}
+          {/*      ADVENTURE PACKAGES             */}
+          {/* ----------------------------------- */}
 
           <Col height="18%" top="15%" width="100%">
             <Col flexDir="column" left padLeft="8%" alignItems="center">
               <div
                 style={{
-                  width: "280px",
-                  height: "65px",
-                  backgroundColor: "#fefdfb",
-                  border: "solid 5px #f1f0eb",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
                   marginRight: "-100%",
-                  zIndex: "1",
-                  marginTop: "12%",
                 }}
+                className="pkg_title-box"
               >
                 <h2 className=" lightWeight colorThree">Adventure Package</h2>
               </div>
-              <p
-                className="colorThree"
-                style={{ textAlign: "right", marginTop: "15px" }}
-              >
+              <p className="colorThree" style={{ textAlign: "right" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
                 maecenas accumsan lacus vel facilisis.
               </p>
               <div className="pkgs_inclusions" style={{ textAlign: "right" }}>
-                <h4 className="colorThree">
+                <h4
+                  style={{
+                    marginTop: "2%",
+                  }}
+                  className="colorThree"
+                >
                   2 hour adventure package includes
                 </h4>
-                <h4 className="colorThree" style={{ marginBottom: "10px" }}>
+                <h4 className="colorThree">
                   • one 16 x 24 • 25 images • 2 minute video
                 </h4>
-                <h4 className="colorThree">$850 for just pictures</h4>
+                <h4
+                  style={{
+                    marginTop: "1%",
+                  }}
+                  className="colorThree"
+                >
+                  $850 for just pictures
+                </h4>
                 <h4 className="colorThree">$1250 for pictures and video</h4>
               </div>
             </Col>
@@ -272,7 +279,7 @@ class FamilyPageContent extends Component {
               <h3 className="colorThree lightWeight">
                 Something here about something
               </h3>
-              <p className="colorThree" style={{ marginTop: "15px" }}>
+              <p className="colorThree">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
                 augue sapien. Nunc faucibus congue interdum. Sed eu enim
                 tincidunt, posuere risus ac, rutrum arcu.
@@ -295,44 +302,46 @@ class FamilyPageContent extends Component {
             ></img>
           </Col>
 
-          {/* ----------------------------------------------- */}
-          {/*           DAY IN THE LIFE PACKAGES              */}
-          {/* ----------------------------------------------- */}
+          {/* ----------------------------------- */}
+          {/*    DAY IN THE LIFE PACKAGES         */}
+          {/* ----------------------------------- */}
 
           <Col height="18%" top="61%" width="100%">
             <Col flexDir="column" right padRight="8%" alignItems="center">
               <div
                 style={{
-                  width: "340px",
-                  height: "65px",
-                  backgroundColor: "#fefdfb",
-                  border: "solid 5px #f1f0eb",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
                   marginLeft: "-100%",
-                  zIndex: "1",
-                  marginTop: "12%",
                 }}
+                className="pkg_title-box"
               >
                 <h2 className="colorThree lightWeight">
                   Day In The Life Package
                 </h2>
               </div>
-              <p style={{ marginTop: "15px" }} className="colorThree">
+              <p className="colorThree">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
                 maecenas accumsan lacus vel facilisis.
               </p>
               <div className="pkgs_inclusions" style={{ textAlign: "left" }}>
-                <h4 className="colorThree">
+                <h4
+                  style={{
+                    marginTop: "2%",
+                  }}
+                  className="colorThree"
+                >
                   2 hour adventure package includes
                 </h4>
                 <h4 className="colorThree">
                   • one 16 x 24 • 25 images • 2 minute video
                 </h4>
-                <h4 style={{ marginTop: "10px" }} className="colorThree">
+                <h4
+                  style={{
+                    marginTop: "1%",
+                  }}
+                  className="colorThree"
+                >
                   $850 for just pictures
                 </h4>
                 <h4 className="colorThree">$1250 for pictures and video</h4>
@@ -354,13 +363,13 @@ class FamilyPageContent extends Component {
               ></img>
             </Col>
             <Col left padLeft="8%" flexDir="column" alignItems="center">
-              <h3 style={{ textAlign: "right" }} className="colorThree">
+              <h3
+                style={{ textAlign: "right" }}
+                className="lightWeight colorThree"
+              >
                 Something here about something
               </h3>
-              <p
-                className="colorThree"
-                style={{ marginTop: "15px", textAlign: "right" }}
-              >
+              <p className="colorThree" style={{ textAlign: "right" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
                 augue sapien. Nunc faucibus congue interdum. Sed eu enim
                 tincidunt, posuere risus ac, rutrum arcu.
@@ -377,21 +386,21 @@ class FamilyPageContent extends Component {
         </div>
 
         {/* ******************************************* */}
-        {/*          SECTION__7__CONTACT FORM           */}
+        {/*                 Section__6                  */}
+        {/*                CONTACT FORM                 */}
         {/* ******************************************* */}
 
-        <div className="contain_form-section fam_bg">
+        <div className="contain_fam-section-6 section_BG">
           <img src={require("../../images/fam_bg-9.png")}></img>
           {/* LEFT PICTURES */}
-          <Col width="25%" alignItems="center"></Col>
+          <Col width="15%" alignItems="center"></Col>
           {/* FORM */}
           <Col
             display="flex"
-            width="50%"
-            marginLeft="25%"
+            width="70%"
+            marginLeft="15%"
             flexDir="column"
             alignItems="center"
-            padTop="5%"
             justCont="unset"
           >
             <h1>Ready to book?</h1>
@@ -413,7 +422,7 @@ class FamilyPageContent extends Component {
             </form>
           </Col>
           {/* RIGHT PICTURES */}
-          <Col width="25%" marginLeft="75%"></Col>
+          <Col width="15%" marginLeft="85%"></Col>
         </div>
       </>
     )

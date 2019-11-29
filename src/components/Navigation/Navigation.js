@@ -10,16 +10,16 @@ class Navigation extends Component {
     nav: [
       { title: "HOME", link: "/" },
       { title: "FAMILY", link: "/familyPage/" },
-      { title: "COUPLES", link: "" },
-      { title: "ABOUT US", link: "" },
-      { title: "BOOK", link: "" },
+      { title: "COUPLES", link: "/couplesPage/" },
+      { title: "ABOUT US", link: "/about/" },
+      { title: "BOOK", link: "/book/" },
     ],
   }
 
   render() {
     const navItems = this.state.nav
     const navLinks = navItems.map(link => (
-      <NavItem title={link.title} link={link.link}></NavItem>
+      <NavItem key={link.title} title={link.title} link={link.link}></NavItem>
     ))
     return <ul>{navLinks}</ul>
   }

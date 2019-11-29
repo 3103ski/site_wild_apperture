@@ -1,52 +1,58 @@
 .player-skin-container {
-	position: relative;
-	width: 80%;
-	bottom: 5%;
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	flex-direction: column;
+  position: relative;
+  width: 80%;
+  bottom: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 
 .player-skin-container .tv-frame {
-	width: 100%;
-	margin-bottom: 5%;
-	margin-top: 2%;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
 .player-skin-container .video {
-	width: 85.8%;
-	margin-top: -40.8%;
-	left: 8.5%;
-	z-index: -1;
-	position: absolute;
+  width: 85.8%;
+  margin-top: -40.8%;
+  left: 8.5%;
+  z-index: -1;
+  position: absolute;
 }
 
-.contain_tv-section p {
-	text-align: center;
-	margin: 0 0 10px 0;
-	width: 140%;
+@media only screen and (max-width: 725px) {
+  .player-skin-container .video {
+    width: 85.8%;
+    margin-top: -39.3%;
+  }
 }
 
-.contain_tv-section h1 {
-	margin-top: -5%;
-	margin-bottom: 3%;
+.player-skin-container p {
+  text-align: center;
+  margin: 0 0 2% 0;
+  width: 140%;
 }
 
-.contain_tv-section button {
-	width: 130px;
-	height: 25px;
-	background-color: rgb(212, 184, 150);
-	margin: 0 2px 10px 2px;
-	padding-bottom: 25px;
-	font-size: 12px;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.player-skin-container h1 {
+  margin-top: -5%;
+  margin-bottom: 3%;
 }
 
-.contain_tv-section button:target,
-.contain_tv-section button:focus {
-	outline: none;
+.player-skin-container button {
+  width: 13vw;
+  height: 2.7vw;
+  background-color: rgb(212, 184, 150);
+  margin: 0 1% 2% 1%;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-skin-container button:target,
+.player-skin-container button:focus {
+  outline: none;
 }

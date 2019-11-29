@@ -1,0 +1,170 @@
+/* ******************************** */
+/*             Shared   			*/
+/* ******************************** */
+
+.contain_home-section-2 button,
+.contain_home-section-4 button {
+  width: 18vw;
+  height: 4.2vw;
+  color: white;
+  font-size: 1.6vw;
+  line-height: 1.6vw;
+}
+
+/* ------------------------------- */
+/*        3 Pics + Stripe          */
+/*        Sections_1 & 3           */
+/* ------------------------------- */
+
+.stripe_container {
+  position: absolute;
+  width: 75%;
+  bottom: 4%;
+}
+.stripe {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.stripe h2 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  position: absolute;
+  width: 100%;
+  font-size: 2.5vw;
+}
+
+/* ------------------------------- */
+/*       Package Summaries         */
+/*        Sections_2 & 4           */
+/* ------------------------------- */
+
+.contain_home-section-2 p,
+.contain_home-section-4 p {
+  font-size: 1.55vw;
+  line-height: 1.7vw;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.contain_home-section-2 h3,
+.contain_home-section-4 h3 {
+  font-size: 2.5vw;
+}
+
+.contain_home-section-2 p,
+.contain_home-section-2 h3,
+.contain_home-section-4 p,
+.contain_home-section-4 h3 {
+  width: 100%;
+  font-weight: 100;
+}
+
+/* ******************************************* */
+/*                    Header                   */
+/*            Title, Banner Pic, Nav           */
+/* ******************************************* */
+
+/* NEED TO MOVE CSS FOR THE HEADER FROM FAMILY CONTENT.css TO GLOBAL */
+
+.image_home-header-bg {
+  background-image: url("../../images/img-home-header.png");
+}
+
+/* ******************************************* */
+/*                 Section__1                  */
+/*          Three Pics, Brown Stripe           */
+/* ******************************************* */
+
+.contain_home-section-1 .stripe_container {
+  right: 0;
+}
+
+.contain_home-section-1 .stripe_container h2 {
+  margin-left: 10%;
+}
+
+/* ******************************************* */
+/*                Section__2                   */
+/*             Family Page Info                */
+/* ******************************************* */
+
+.contain_home-section-2 p {
+  padding-right: 10%;
+}
+
+.contain_home-section-2 p,
+.contain_home-section-2 h3 {
+  text-align: left;
+}
+
+/* ******************************************* */
+/*              Section__Mount                 */
+/*             Mountain Graphic                */
+/* ******************************************* */
+
+.contain_home-section-mount .mountain {
+  width: 70%;
+}
+
+/* ******************************************* */
+/*                 Section__3                  */
+/*          Three Pics, Blue  Stripe           */
+/* ******************************************* */
+
+.contain_home-section-3 .stripe_container {
+  left: 0;
+}
+
+.contain_home-section-3 .stripe_container h2 {
+  padding-right: 10%;
+  text-align: right;
+}
+
+/* ******************************************* */
+/*                 Section__4                  */
+/*            Couples info & link              */
+/* ******************************************* */
+
+.contain_home-section-4 h3 {
+  text-align: right;
+}
+
+.contain_home-section-4 p {
+  padding-left: 10%;
+  text-align: right;
+}
+
+/* ******************************************* */
+/*               Section__5__                  */
+/*            TOMMY & JACELYNE                 */
+/* ******************************************* */
+
+.contain_home-section-5 .bioTitle {
+  text-align: left;
+  width: 100%;
+  margin-top: 20%;
+  background-image: url("../../images/home-section-5-fern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 5%;
+}
+
+.contain_home-section-5 .bioTitle h2 {
+  line-height: 3vw;
+  font-size: 3vw;
+}
+
+.contain_home-section-5 .bioTitle h2 span {
+  font-size: 2vw;
+}
+
+.contain_home-section-5 p {
+  margin-bottom: auto;
+  padding-left: 5%;
+  margin-top: 1%;
+  font-size: 1.5vw;
+  line-height: 1.8vw;
+}

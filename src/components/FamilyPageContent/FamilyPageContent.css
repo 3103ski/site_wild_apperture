@@ -1,76 +1,16 @@
-/* NOTES */
-/* All contents inside of each section container must be nested in a container that is positioned absolute to maintain seamless BG */
+/* ******************************************* */
+/*                    Header                   */
+/*            Title, Banner Pic, Nav           */
+/* ******************************************* */
 
-/* ******************************** */
-/*    UTILITY & TAG STYLES	        */
-/* ******************************** */
-
-.lightWeight {
-  font-weight: 100;
+.image_fam-header-bg {
+  background-image: url("../../images/img-fam-header.png");
 }
 
-/* ******************************** */
-/*    Position_BG_Imgs 				*/
-/* ******************************** */
-
-.fam_bg img {
-  display: table-row;
-  width: 100%;
-}
-
-.fam_bg {
-  position: relative;
-}
-
-/* ******************************** */
-/*    Header_Section			    */
-/* ******************************** */
-
-.contain_fam-header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.image_header-bg {
-  background-image: url("../../images/img-home-header.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* ******************************** */
-/*    Page_Title_Text   			*/
-/* ******************************** */
-
-.box_header-titles {
-  margin: 4% auto 0 auto;
-  text-align: center;
-}
-
-.box_header-titles h1 {
-  font-family: "Playfair Display", serif;
-}
-.box_header-titles h1,
-.box_header-titles h4 {
-  font-weight: 100;
-}
-
-.arrowGraphic img {
-  width: 570px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-/* ******************************** */
-/*    SECTION__2__FourPictures      */
-/* ******************************** */
+/* ******************************************* */
+/*                 Section__1                  */
+/*            Four Picture samples             */
+/* ******************************************* */
 
 @keyframes showTxt {
   0% {
@@ -90,37 +30,46 @@
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.contain_section-2 p {
-  margin-top: 15px;
-  font-size: 18px;
-  line-height: 1.3rem;
+.contain_fam-section-1 h2 {
+  font-size: 3vw;
+  line-height: 3.2vw;
 }
 
-/* ******************************** */
-/*    SECTION__3__TheyGrowSoFast    */
-/* ******************************** */
+.contain_fam-section-1 p {
+  margin-top: 4%;
+  font-size: 1.7vw;
+  line-height: 2vw;
+}
 
-.contain_section-3 p {
-  margin-top: 15px;
+/* ******************************************* */
+/*                 Section__2                  */
+/*            The Grow Fast Banner             */
+/* ******************************************* */
+
+.contain_fam-section-2 p {
+  margin-top: 3%;
   padding-right: 6%;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 1.7vw;
+  line-height: 2vw;
 }
 
-/* ******************************** */
-/*    SECTION__4__TV-section        */
-/* ******************************** */
+/* ******************************************* */
+/*                 Section__3                  */
+/*                 TV SECTION                  */
+/* ******************************************* */
 
-.contain_tv-section p {
+.contain_fam-section-3 p {
   text-align: center;
   margin: 0 0 10px 0;
+  font-size: 1.7vw;
+  line-height: 2vw;
 }
 
-.contain_tv-section h1 {
+.contain_fam-section-3 h1 {
   margin-top: -5%;
 }
 
-.contain_tv-section button {
+.contain_fam-section-3 button {
   width: 130px;
   height: 25px;
   background-color: rgb(212, 184, 150);
@@ -132,20 +81,23 @@
   justify-content: center;
 }
 
-/* ******************************** */
-/*    SECTION__5__PRINTS 			*/
-/* ******************************** */
+/* ******************************************* */
+/*                 Section__4                  */
+/*              FRAMED PICTURES                */
+/* ******************************************* */
 
-.contain_print-section h1,
-.contain_print-section p {
+.contain_fam-section-4 h1,
+.contain_fam-section-4 p {
   padding-left: 15px;
 }
 
-.contain_print-section p {
-  margin-top: 10px;
+.contain_fam-section-4 p {
+  margin-top: 3%;
+  font-size: 1.7vw;
+  line-height: 2vw;
 }
 
-.contain_print-section button {
+.contain_fam-section-4 button {
   width: 180px;
   height: 40px;
   background-color: rgb(147, 118, 86);
@@ -154,28 +106,41 @@
   color: white;
 }
 
-/* ******************************** */
-/*    SECTION__6__PACKAGES 			*/
-/* ******************************** */
+/* ******************************************* */
+/*                 Section__5                  */
+/*              FAMILY PACKAGES                */
+/* ******************************************* */
 
-.contain_packages-section .package-pic-right {
-  /* max-width: 480px; */
+.contain_fam-section-5 .package-pic-right {
   margin-right: auto;
 }
 
-.contain_packages-section .package-pic-left {
-  /* max-width: 480px; */
-  margin-right: left;
-}
-
-.contain_packages-section .mountain {
+.contain_fam-section-5 .mountain {
   width: 30%;
 }
 
-.contain_packages-section p {
-  font-size: 18px;
-  line-height: 20px;
-  margin-bottom: 10px;
+.contain_fam-section-5 p {
+  margin-top: 2%;
+  font-size: 1.7vw;
+  line-height: 2vw;
+  margin-bottom: 0;
+}
+
+.pkg_title-box {
+  width: 25vw;
+  height: 5vw;
+  background-color: #fefdfb;
+  border: solid 0.45vw #f1f0eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+  margin-top: 12%;
+}
+
+.pkg_title-box h2 {
+  font-size: 2.25vw;
 }
 
 .pkgs_inclusions {
@@ -183,35 +148,30 @@
   margin-bottom: auto;
 }
 
-.contain_packages-section h2 {
-  font-size: 1.6rem;
+.contain_fam-section-5 h4 {
+  font-size: 1.5vw;
 }
 
-.contain_packages-section h3 {
-  font-size: 1.7rem;
-  text-align: left;
+.contain_fam-section-5 h3 {
+  font-size: 3vw;
   width: 100%;
 }
 
-/* .pkgs_inclusions h4 {
-  text-align: right;
-} */
+/* ******************************************* */
+/*                 Section__6                  */
+/*                CONTACT FORM                 */
+/* ******************************************* */
 
-/* ******************************** */
-/*    SECTION__7__CONTACT FORM      */
-/* ******************************** */
-
-.contain_form-section h1 {
-  margin-bottom: 20px;
+.contain_fam-section-6 h1 {
+  margin-bottom: 3vw;
   color: #837448;
-  font-family: playfield;
-  font-size: 3.4rem;
+  font-size: 9vw;
   font-weight: 100;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 
-.contain_form-section form {
+.contain_fam-section-6 form {
   padding: 0;
   width: 100%;
   margin-left: auto;
@@ -219,29 +179,33 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-size: 1.6vw;
+  line-height: 1.8vw;
 }
 
-.contain_form-section form input,
-.contain_form-section form textarea {
+.contain_fam-section-6 form input,
+.contain_fam-section-6 form textarea {
   padding: 0px 15px;
-  width: 80%;
+  width: 75%;
   margin: 2px;
   background-color: #f3f3f3;
   border: unset;
   color: #c0baa6;
 }
 
-.contain_form-section form input {
-  height: 45px;
+.contain_fam-section-6 form input {
+  height: 3.5vw;
 }
 
-.contain_form-section form textarea {
+.contain_fam-section-6 form textarea {
   padding: 15px;
+  height: 23vw;
 }
 
-.contain_form-section form button {
-  width: 80%;
-  height: 45px;
+.contain_fam-section-6 form button {
+  width: 75%;
+  height: 3.5vw;
   background-color: #f3f3f3;
   border: solid 2px #a38f5840;
+  color: #c0baa6;
 }
